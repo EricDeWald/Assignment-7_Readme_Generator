@@ -63,9 +63,9 @@ function init() {
     inquirer.prompt([...questions])
 
     .then((data) => {return fileName, data}).then(writeToFile(fileName,data)).then(generateMarkdown(data))
-    .catch(err => {
-        console.log(err);
-    })
+    // .catch(err => {
+    //     console.log(err);
+    // })
     
     // generateMarkdown(data)
     // writeToFile(fileName, data)
