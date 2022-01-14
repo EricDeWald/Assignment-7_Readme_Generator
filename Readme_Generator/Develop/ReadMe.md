@@ -1,10 +1,10 @@
-# Professional Readme Generator
+# Title
 
-
+![](https://img.shields.io/aur/license/android-studio)
 
 ## Description
 
-This project alows the user to generate a professional readme in thier termanal. This will populate a markdown document with sections automatically.
+Description
 
 ## Table of Contents (Optional)
 
@@ -15,18 +15,25 @@ This project alows the user to generate a professional readme in thier termanal.
 
 ## Installation
 
-Make sure to run your node init beforehand and you are good to go!
+instructions
 
 ## Usage
 
-This makes Readmes fast and much less of a hassle.
+info
 
+## License
 
+This project is covered under Appache 2.0.
 
 ## How to Contribute
 
-Please no cotributions at this time.
+contributions
 
 ## Tests
 
-To run a test simply use node index.js in the terminal. 
+test 
+
+
+## Questions
+
+If you have any questions contact me at: email or here https://github.com/git
