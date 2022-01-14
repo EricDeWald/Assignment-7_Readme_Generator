@@ -1,10 +1,10 @@
-# Title
+# title of the project
 
 ![](https://img.shields.io/aur/license/android-studio)
 
 ## Description
 
-Description
+descript
 
 ## Table of Contents (Optional)
 
@@ -15,7 +15,7 @@ Description
 
 ## Installation
 
-instructions
+install me
 
 ## Usage
 
@@ -27,13 +27,13 @@ This project is covered under Appache 2.0.
 
 ## How to Contribute
 
-contributions
+no thanks
 
 ## Tests
 
-test 
+test test 
 
 
 ## Questions
 
-If you have any questions contact me at: email or here https://github.com/git
+If you have any questions contact me at: email me or here https://github.com/git 
