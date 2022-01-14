@@ -2,6 +2,10 @@
 
 
 
+https://user-images.githubusercontent.com/16121983/149456984-001a0143-1444-4f17-8726-96e76b3ba53b.mp4
+
+
+
 ## Description
 
 This project alows the user to generate a professional readme in thier termanal. This will populate a markdown document with sections automatically.
@@ -30,3 +34,4 @@ Please no cotributions at this time.
 ## Tests
 
 To run a test simply use node index.js in the terminal. 
+
