@@ -33,7 +33,12 @@ const questions = [{
     type: 'input',
     message: 'Enter test instructions: ',
     name: 'pTestInstructions'
-},
+},{
+    type: 'list',
+    name: 'license',
+    message: 'Choose a license: ',
+    choices:["NONE","Appache 2.0","GPL 3.0","MIT"]
+}
 ];
 
 inquirer.prompt([...questions])
