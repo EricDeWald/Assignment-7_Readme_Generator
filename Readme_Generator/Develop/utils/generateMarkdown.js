@@ -5,11 +5,11 @@ function renderLicenseBadge(license){
     var lBadge =""
     if (license == "NONE" ){ return lBadge =""}
 
-    if (license == "Appache 2.0" ){ return lBadge =""}
+    if (license == "Appache 2.0" ){ return lBadge ="[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"}
 
-    if (license == "GPL 3.0" ){ return lBadge =""}
+    if (license == "GPL 3.0" ){ return lBadge ="[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)"}
 
-    if (license == "MIT" ){ return lBadge =""}
+    if (license == "MIT" ){ return lBadge ="[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"}
 };
 
 // TODO: Create a function that returns the license link
@@ -19,11 +19,11 @@ function renderLicenseLink(license) {
 
     if (license == "NONE" ){ return lLink =""}
 
-    if (license == "Appache 2.0" ){ return lLink =""}
+    if (license == "Appache 2.0" ){ return lLink ="## License     (https://opensource.org/licenses/Apache-2.0)"}
 
-    if (license == "GPL 3.0" ){ return lLink =""}
+    if (license == "GPL 3.0" ){ return lLink ="(https://www.gnu.org/licenses/agpl-3.0)"}
 
-    if (license == "MIT" ){ return lLink =""}
+    if (license == "MIT" ){ return lLink ="(https://opensource.org/licenses/MIT)"}
 }
 
 // TODO: Create a function that returns the license section of README

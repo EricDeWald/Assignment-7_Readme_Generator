@@ -41,16 +41,7 @@ const questions = [{
 }
 ];
 
-inquirer.prompt([...questions])
 
-    .then((data) => {
-        
-        return fileName, data;
-    })
-    .catch(err => {
-        console.log(err);
-    })
-    
 
 // TODO: Create a function to write README file
 
@@ -65,10 +56,19 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
+
+
+
 function init() {
+    inquirer.prompt([...questions])
+
+    .then((data) => {return fileName, data}).then(writeToFile(fileName,data)).then(generateMarkdown(data))
+    .catch(err => {
+        console.log(err);
+    })
     
-    generateMarkdown(data)
-    writeToFile(fileName, data)
+    // generateMarkdown(data)
+    // writeToFile(fileName, data)
 }
 
 // Function call to initialize app
