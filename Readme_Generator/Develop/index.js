@@ -7,10 +7,6 @@ const generateMarkdown = require('./utils/generateMarkdown')
 
 const questions = [{
     type: 'input',
-    message: 'Enter readme file name: ',
-    name: 'fileName'
-},{
-    type: 'input',
     message: 'Enter project title: ',
     name: 'pTitle'
 },{
@@ -39,37 +35,26 @@ const questions = [{
     message: 'Choose a license: ',
     choices:["NONE","Appache 2.0","GPL 3.0","MIT"]
 }
-];
-
-
-
+]
 // TODO: Create a function to write README file
 
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => {
+function writeToFile(data) {
+    fs.writeFile("ReadMe.md", generateMarkdown(data), (err) => {
+        
         if (err) {
             console.log(err);
         }
         console.log('Successful');
     })
-    console.log(writeToFile(fileName, data))
+    // console.log(writeToFile(fileName, data))
 }
-
-// TODO: Create a function to initialize app
-
-
-
+// // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt([...questions])
-
-    .then((data) => {return fileName, data}).then(writeToFile(fileName,data)).then(generateMarkdown(data))
+    inquirer.prompt(questions).then((data)=>{writeToFile(data)})
+    
     // .catch(err => {
     //     console.log(err);
     // })
-    
-    // generateMarkdown(data)
-    // writeToFile(fileName, data)
 }
-
 // Function call to initialize app
 init();
